@@ -39,6 +39,7 @@ function randMotivationalQuote() {
     let quote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
     document.getElementById('quote').textContent = quote;
 }
-document.addEventListener('click', ()=>{
+//Applies function to Motivational Quote Button
+document.getElementById('motivational-quote').addEventListener('click', ()=>{
     randMotivationalQuote();
 });
