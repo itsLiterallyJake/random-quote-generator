@@ -24,7 +24,7 @@ const motivationalQuotes = ["There is nothing impossible to they who will try. -
 "Live your life like someone else is watching you", "Don’t take criticism from someone you wouldn’t take advice from.", "What’s easy & what’s right are rarely the same thing.", "If you’re going through hell, keep going. -Winston Churchill", "It is during our darkest moments that we must focus to see the light. -Aristotle", "Forgive yourself for your faults and your mistakes and move on. -Les Brown", "Accept responsibility for your life. Know that it is you who will get you where you want to go, no one else. -Les Brown", "If you live off a man’s compliments, you’ll die from his criticism.", "The world didn't get worse, your eyes just got wider.", 
 "If you put someone on a pedestal, they have no choice but to look down on you."];
 
-//Gets Random Quote from Array
+//Gets Random Quote from Gaming quotes Array
 function randGameQuote() {
     let quote = gamingQuotes[Math.floor(Math.random() * gamingQuotes.length)]
     document.getElementById('quote').textContent = quote;
@@ -33,3 +33,12 @@ function randGameQuote() {
 document.getElementById('gaming-quote').addEventListener('click', ()=>{
     randGameQuote();
 })
+
+//Gets Random Quote from Motivational Quotes Array 
+function randMotivationalQuote() {
+    let quote = motivationalQuotes[Math.floor(Math.random() * motivationalQuotes.length)];
+    document.getElementById('quote').textContent = quote;
+}
+document.addEventListener('click', ()=>{
+    randMotivationalQuote();
+});
