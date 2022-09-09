@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
 .body {
     background-color: #222;
     display: flex;
@@ -16,7 +18,7 @@
     margin-top: 75px;
 }
 .hero-cont {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -36,7 +38,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
+    flex-wrap: wrap;
+    border: 2px solid white;
     border-radius: 25px;
     margin-top: 25px;
     width: 500px;
@@ -46,13 +49,26 @@
     margin-bottom: 0px;
 }
 .button {
+    padding: 3px;
     border: 1px solid white;
     color: white;
     background-color: #222;
-    cursor: pointer
+    cursor: pointer;
+    font-family: Raleway;
+    font-weight: 900;
 }
+.button:hover {
+    box-shadow: 3px 3px 0 0 orangered;
+    border: 2px solid white;
+}
+.button:active {
+    background-color: grey;
+    box-shadow: 0 5px orangered;
+    transform: translateY(4px);
+  }
 .hero, .hero-subtext, .quote {
     color: white;
+    font-family: Raleway;
 } 
 .main-container {
     --borderWidth: 3px;
@@ -85,4 +101,7 @@
       100% {
           background-position: 0% 50%;
       }
+  }
+  .quote {
+    font-weight: 800;
   }
